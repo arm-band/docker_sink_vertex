@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+    vertex:
+      image: "node:$NODE_VERSION"
+      user: "node"
+      volumes:
+        # project root
+        - $PROJECT_ROOT_DIRECTORY:/home/node/app
+      tty: true
+      ports:
+        - "$HOST_PORTNUM:$CONTAINER_PORTNUM"
