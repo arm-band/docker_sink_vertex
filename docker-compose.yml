@@ -8,4 +8,5 @@ services:
         - $PROJECT_ROOT_DIRECTORY:/home/node/app
       tty: true
       ports:
-        - "$HOST_PORTNUM:$CONTAINER_PORTNUM"
+        - "3000:3000"
+        - "3001:3001"
